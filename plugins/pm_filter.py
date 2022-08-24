@@ -766,7 +766,6 @@ async def auto_filter(client, msg, spoll=False):
         fmsg = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(600)
     await fmsg.delete()
-    await message.delete()
     
     if spoll:
         await msg.message.delete()
@@ -813,7 +812,7 @@ async def advantage_spell_chok(msg):
         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(8)
         await k.delete()
-        await msg.delete()
+    
         return
     SPELL_CHECK[msg.id] = movielist
     btn = [[
@@ -831,7 +830,6 @@ async def advantage_spell_chok(msg):
     
     await asyncio.sleep(8)
     await zz1.delete()
-    await msg.delete()
     
 
 async def manual_filters(client, message, text=False):
@@ -878,7 +876,7 @@ async def manual_filters(client, message, text=False):
                         )
                     await asyncio.sleep(600)
                     await fmsg.delete()
-                    await message.delete()
+                    
                     
                     
                 except Exception as e:
