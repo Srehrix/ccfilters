@@ -157,7 +157,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit("<b><i>Movie Not available Reason\n\n1)O.T.T Or DVD Not Released\n\n2)Type Name With Year\n\n3)Movie Is Not Available in the database Report to Admins\n\nReport to Admin By 👇\n@MF_SupportBot</i></b>")
+            k = await query.message.edit("<b><i>Movie Not available Reason\n\n1)O.T.T Or DVD Not Released\n\n2)Type Name With Year\n\n3)Movie Is Not Available in the database Report to Admins\n\nReport to Admin By 👇\n@Sir_Pablo_bot</i></b>")
             await asyncio.sleep(999028790)
             await k.delete()
 
@@ -428,8 +428,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💮 ᴜᴘᴅᴀᴛᴇ 💮', url='https://t.me/movieflix_tg'),
-            InlineKeyboardButton('💮 ᴍᴏᴠɪᴇs 💮', url='https://t.me/movieflix_tg')
+            InlineKeyboardButton('💮 ᴜᴘᴅᴀᴛᴇ 💮', url='https://t.me/CinemaCompanyOffiz'),
+            InlineKeyboardButton('💮 MAIN 💮', url='https://t.me/CinemaCompanyofficials')
             ],[      
             InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
@@ -460,7 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs', url='https://t.me/movieflix_tg'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs', url='https://t.me/CinemaCompanyOffiz'),
             InlineKeyboardButton('♥️ sᴏᴜʀᴄᴇs', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 ʜᴏᴍᴇ', callback_data='start'),
@@ -635,11 +635,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
     elif query.data == 'tips':
-        await query.answer("🔰 Ask with correct spelling\n🔰 Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n🔰 For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021\n\tⒸ @ᴍᴏᴠɪᴇꜰʟɪx_ᴛɢ", True)
+        await query.answer("🔰 Ask with correct spelling\n🔰 Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n🔰 For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021\n\tⒸ @CinemaCompanyofficials", True)
     elif query.data == 'reqst1':
         await query.answer("Hey Bro 😍\n\n🎯 Click On The Button below The Files You Want And Start The Bot ⬇️", True)
     elif query.data == 'info':
-        await query.answer("⚠︎ Information ⚠︎\n\nIf you do not see the requested movie / series file, look at the next page\n\nⒸ @ᴍᴏᴠɪᴇꜰʟɪx_ᴛɢ", True)
+        await query.answer("⚠︎ Information ⚠︎\n\nIf you do not see the requested movie / series file, look at the next page\n\nⒸ @CinemaCompanyofficials", True)
     try: await query.answer('Piracy Is Crime')
     except: pass
 
@@ -824,7 +824,7 @@ async def advantage_spell_chok(msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     zz = await msg.reply('<b><i>Searching for you result in imdb Wait...🧐<i/></b>')
     await asyncio.sleep(1)
-    zz1 = await zz.edit("<b><i>I couldn't find anything related to that Did you mean any one of these?\n\nനിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലോം ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</i></b>",
+    zz1 = await zz.edit("<b><i>I couldn't find anything related to that Did you mean any one of these?\n</i></b>",
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(13)
     
