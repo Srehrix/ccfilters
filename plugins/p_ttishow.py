@@ -37,8 +37,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', url=f"https://t.me/MichaelAnjoottiTG"),
-            InlineKeyboardButton('🧑‍🏫ᴛᴜᴛᴏʀɪᴀʟ', url='https://t.me/movieflix_tg')
+            InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', url=f"https://t.me/tiyaan_bots_chat"),
+            InlineKeyboardButton('🧑‍🏫ᴛᴜᴛᴏʀɪᴀʟ', url='https://t.me/Sir_Pablo_bot')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
